@@ -24,6 +24,7 @@ app.set('view engine','.hbs');
 
 //routes
 app.use(require('./routes/index'));
+app.use(require('./routes/notes'));
 
 app.listen(app.get('port'), (req,res) => {
     console.log("server on port", app.get('port'));
